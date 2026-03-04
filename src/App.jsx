@@ -11,16 +11,15 @@ function App() {
 
 
   return (
-    <div className='border border-red-300'>
+    <div >
       <Navbar />
-      <h1>Vite + React</h1>
 
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
-      <Suspense>
-        <Tickets fetchTickets={fetchTickets} />
-      </Suspense>
+      <div className='max-w-7xl mx-auto'>
+        <Suspense>
+          <Tickets fetchTickets={fetchTickets} />
+        </Suspense>
+      </div>
+
     </div>
   )
 }

@@ -22,7 +22,7 @@
     "title": "Slow database queries on Dashboard",
     "description": "The 'Recent Activity' widget is taking over 5 seconds to load for enterprise accounts.",
     "customer": "DataStream Inc",
-    "priority": "Critical",
+    "priority": "High",
     "status": "Open",
     "createdAt": "2024-03-02T08:00:00Z"
   },
@@ -76,7 +76,7 @@
     "title": "Payment Gateway Timeout",
     "description": "Stripe integration is timing out during peak traffic hours (12 PM - 2 PM).",
     "customer": "Urban Shop",
-    "priority": "Critical",
+    "priority": "High",
     "status": "Open",
     "createdAt": "2024-03-05T12:00:00Z"
   },
