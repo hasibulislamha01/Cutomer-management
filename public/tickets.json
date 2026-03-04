@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TKT-101",
+    "title": "Login page crashing on Safari",
+    "description": "Users reporting a white screen when attempting to log in using Safari v17.4.",
+    "customer": "TechNova Corp",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-03-01T09:15:00Z"
+  },
+  {
+    "id": "TKT-102",
+    "title": "Update logo in email templates",
+    "description": "Replace the old branding with the new high-res SVG logo in all outgoing system emails.",
+    "customer": "Global Retail Partners",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2024-03-01T11:30:00Z"
+  },
+  {
+    "id": "TKT-103",
+    "title": "Slow database queries on Dashboard",
+    "description": "The 'Recent Activity' widget is taking over 5 seconds to load for enterprise accounts.",
+    "customer": "DataStream Inc",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2024-03-02T08:00:00Z"
+  },
+  {
+    "id": "TKT-104",
+    "title": "Add 'Export to PDF' feature",
+    "description": "Customer requested the ability to export monthly reports directly to PDF format.",
+    "customer": "FinEdge Ltd",
+    "priority": "Medium",
+    "status": "Backlog",
+    "createdAt": "2024-03-02T14:45:00Z"
+  },
+  {
+    "id": "TKT-105",
+    "title": "Fix typo in Privacy Policy",
+    "description": "Section 4.2 has a misspelling of 'confidentiality'.",
+    "customer": "Internal",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2024-03-03T10:20:00Z"
+  },
+  {
+    "id": "TKT-106",
+    "title": "Password reset link expiring too fast",
+    "description": "Links are expiring in 5 minutes instead of the documented 30 minutes.",
+    "customer": "Swift Logistics",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2024-03-03T16:10:00Z"
+  },
+  {
+    "id": "TKT-107",
+    "title": "API Rate Limit increase request",
+    "description": "Client needs an increase from 1k to 5k requests per hour for their migration script.",
+    "customer": "CloudScale",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-03-04T09:05:00Z"
+  },
+  {
+    "id": "TKT-108",
+    "title": "Dark mode toggle flickering",
+    "description": "Screen flashes bright white for a split second when switching themes.",
+    "customer": "Creative Pulse",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2024-03-04T13:40:00Z"
+  },
+  {
+    "id": "TKT-109",
+    "title": "Payment Gateway Timeout",
+    "description": "Stripe integration is timing out during peak traffic hours (12 PM - 2 PM).",
+    "customer": "Urban Shop",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2024-03-05T12:00:00Z"
+  },
+  {
+    "id": "TKT-110",
+    "title": "Broken link in footer",
+    "description": "The 'Careers' link leads to a 404 page.",
+    "customer": "Internal",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-03-05T15:30:00Z"
+  },
+  {
+    "id": "TKT-111",
+    "title": "Mobile navigation menu won't close",
+    "description": "On Android Chrome, clicking the 'X' button doesn't retract the menu.",
+    "customer": "Nomad Travel",
+    "priority": "High",
+    "status": "Backlog",
+    "createdAt": "2024-03-06T07:50:00Z"
+  },
+  {
+    "id": "TKT-112",
+    "title": "Bulk user upload failing",
+    "description": "CSV uploads with more than 50 rows are returning a 500 Server Error.",
+    "customer": "EduLearn Systems",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2024-03-06T11:25:00Z"
+  }
+]
