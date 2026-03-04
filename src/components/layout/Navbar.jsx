@@ -28,7 +28,7 @@ export default function Navbar() {
     },
   ]
   return (
-    <nav className='h-20 border flex items-center px-10'>
+    <nav className='h-20 flex items-center px-10 shadow-xl shadow-primary/20'>
       <h1 className='mr-auto text-[#632EE3] text-xl font-semibold'>eTicket</h1>
       <div className='flex items-center gap-8'>
         {

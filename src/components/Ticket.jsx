@@ -1,11 +1,11 @@
 import React from 'react'
 import DateFormatter from './utilities/DateFormatter'
 
-export default function Ticket({ ticket }) {
+export default function Ticket({ ticket, handleSelect }) {
 
 
     return (
-        <div className="card shadow-sm">
+        <div className="card shadow-sm" onClick={() => handleSelect(ticket?.id)}>
             <div className="card-body">
                 <div className='flex items-center justify-between'>
                     <h2 className="card-title">{ticket?.title}</h2>
@@ -16,7 +16,7 @@ export default function Ticket({ ticket }) {
                 <p className='text-gray-500'>{ticket?.description}</p>
                 <div className="card-actions">
                     <h5 className={`uppercase font-medium 
-                        ${ticket?.priority === "Low" ? "text-green-600" : 
+                        ${ticket?.priority === "Low" ? "text-green-600" :
                             ticket?.priority === "High" ? "text-red-600" : "text-amber-500"}
                         `}>{ticket?.priority}</h5>
                     <h5>{ticket?.customer}</h5>
