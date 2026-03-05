@@ -5,7 +5,7 @@ import Navbar from './components/layout/Navbar'
 import Tickets from './components/Tickets'
 import Footer from './components/shared/Footer'
 
-const fetchTickets = fetch("/public/tickets.json").then(res => res.json())
+const fetchTickets = fetch("/tickets.json").then(res => res.json())
 
 function App() {
 
