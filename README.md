@@ -1,16 +1,16 @@
-# React + Vite
+### What is JSX
+JSX এর পূর্ণরূপ JavaScript XML. এটা আমাদেরকে রিয়াক্ট কম্পোনেন্টের ভিতর Markup like javaScript লিখতে সাহায্য করে। 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Difference between state and props
+State হলো রিয়্যাক্ট কম্পোনেন্ট এর একটি ভ্যারিয়েবল যা আমাদেরকে state update হওয়ার সাথে সাথেই UI update করতে সাহায্য করে। 
+Props হলো রিয়্যাক্ট এর parent component হতে child component এ পাঠানো variable যা child component ব্যবহার করতে পারে কিন্তু পরিবর্তন করতে পারেনা।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### What is useState hook and how does it work
+useState একটি রিয়্যাক্ট হুক যা এমন ভ্যারিয়েবল store ও update করায় ব্যবহার করা হয় যার উপর react component নির্ভরশীল। এটি একটি variable এবং function এর array return করে। Varibale টা ভ্যালু স্টোর করে আর function টা ভ্যালু আপডেট করার কাজ করে।
 
-## React Compiler
+### How can you share state between components in React?
+আমরা prop lifting এর মাধ্যমে props share করতে পারি। আমরা common parent component এ state রাখার মাধ্যমে প্যারেন্ট component থেকে child component এ props পাঠিয়ে props share করতে পারি।
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### How is event handling done in React?
+Event handling আমরা রিয়্যাক্ট এ কিছু ফাংশন ব্যবহার করে করতে পারি যেমন onClick, onBlur, onMouseEnter etc
