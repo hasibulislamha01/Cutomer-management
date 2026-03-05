@@ -1,6 +1,8 @@
 import React, { use, useState } from 'react'
 import Ticket from './Ticket'
 import Summary from './Summary'
+import ButtonAlart from './utilities/Alert'
+import { toast, ToastContainer } from 'react-toastify'
 
 export default function Tickets({ fetchTickets }) {
 
@@ -22,15 +24,29 @@ export default function Tickets({ fetchTickets }) {
 
     const handleInProgress = (id) => {
         const x = selected?.filter(sid => sid !== id)
-        setSelected(x)
-        setInProgress(prev => [...prev, id])
+        try {
+            setSelected(x)
+            setInProgress(prev => [...prev, id])
+            toast.success("Task in progress")
+        } catch (error) {
+            toast.error("Failed to progress")
+            console.log(error)
+        }
     }
 
     const handleResolve = (id) => {
         const x = inProgress?.filter(pid => pid !== id)
-        setInProgress(x)
-        setResolved(prev => [...prev, id])
+        try {
+            setInProgress(x)
+            setResolved(prev => [...prev, id])
+            toast.success(" Task Resolved ")
+        } catch (error) {
+            console.log(error)
+            toast.error("Failed to Resolve task")
+        }
     }
+
+
 
     const selectedTickets = tickets?.filter(ticket => selected?.includes(ticket?.id))
     const inProgressTickets = tickets?.filter(ticket => inProgress.includes(ticket?.id))
@@ -52,6 +68,11 @@ export default function Tickets({ fetchTickets }) {
                     }
                 </div>
                 <div className='space-y-10 w-96'>
+                    <ToastContainer
+                        position='top-center'
+                        autoClose={3000}
+
+                    />
                     <div className="card card-dash border-primary">
                         <div className="card-body">
                             <h2 className="card-title">Task Status {selectedTickets?.length}</h2>
@@ -63,9 +84,11 @@ export default function Tickets({ fetchTickets }) {
                                             <div className="card-body">
                                                 <h2 className="text-lg font-medium">{ticket?.title}</h2>
 
-                                                <button className="btn btn-block btn-primary text-green-50"
+                                                <div className="btn btn-block btn-primary text-green-50"
                                                     onClick={() => handleInProgress(ticket?.id)}>
-                                                    Continue</button>
+                                                    Continue
+                                                </div>
+
                                             </div>
                                         </div>
                                     ) :
