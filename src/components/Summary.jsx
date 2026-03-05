@@ -6,12 +6,12 @@ const Summary = ({ inProgress, resolved }) => {
             <div className=" card bg-linear-to-r from-[#632EE3] to-[#9F62F2] image-full shadow-sm">
                 <figure className='flex items-center'>
                     <img
-                        src="/public/vector1.png"
+                        src="/vector1.png"
                         alt="vector" 
                         className='flex-1 '
                         />
                     <img
-                        src="/public/vector1.png"
+                        src="/vector1.png"
                         alt="vector" 
                         className='flex-1 rotate-180'
                         />
