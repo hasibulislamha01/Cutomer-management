@@ -5,7 +5,7 @@ import Summary from './Summary'
 export default function Tickets({ fetchTickets }) {
 
     const tickets = use(fetchTickets)
-    
+
     const [selected, setSelected] = useState([])
     const [inProgress, setInProgress] = useState([])
     const [resolved, setResolved] = useState([])
@@ -45,12 +45,13 @@ export default function Tickets({ fetchTickets }) {
                             <Ticket
                                 key={ticket?.id}
                                 ticket={ticket}
+                                selected={selected}
                                 handleSelect={handleSelect}
                             />
                         )
                     }
                 </div>
-                <div className='space-y-10'>
+                <div className='space-y-10 w-96'>
                     <div className="card card-dash border-primary">
                         <div className="card-body">
                             <h2 className="card-title">Task Status {selectedTickets?.length}</h2>
@@ -60,7 +61,7 @@ export default function Tickets({ fetchTickets }) {
                                     selectedTickets?.map(ticket =>
                                         <div key={ticket?.id} className="card shadow-sm">
                                             <div className="card-body">
-                                                <h2 className="card-title">{ticket?.title}</h2>
+                                                <h2 className="text-lg font-medium">{ticket?.title}</h2>
 
                                                 <button className="btn btn-block btn-primary text-green-50"
                                                     onClick={() => handleInProgress(ticket?.id)}>
