@@ -7,14 +7,14 @@ const Summary = ({ inProgress, resolved }) => {
                 <figure className='flex items-center'>
                     <img
                         src="/vector1.png"
-                        alt="vector" 
+                        alt="vector"
                         className='flex-1 '
-                        />
+                    />
                     <img
                         src="/vector1.png"
-                        alt="vector" 
+                        alt="vector"
                         className='flex-1 rotate-180'
-                        />
+                    />
                 </figure>
                 <div className="card-body flex flex-col items-center justify-center gap-6">
                     <h2 className="text-3xl">In Progress</h2>
@@ -24,15 +24,15 @@ const Summary = ({ inProgress, resolved }) => {
             <div className=" card bg-linear-to-r from-[#54CF68] to-[#00827A] image-full shadow-sm">
                 <figure className='flex items-center'>
                     <img
-                        src="/public/vector1.png"
-                        alt="vector" 
+                        src="/vector1.png"
+                        alt="vector"
                         className='flex-1 '
-                        />
+                    />
                     <img
-                        src="/public/vector1.png"
-                        alt="vector" 
+                        src="/vector1.png"
+                        alt="vector"
                         className='flex-1 rotate-180'
-                        />
+                    />
                 </figure>
                 <div className="card-body flex flex-col items-center justify-center gap-6">
                     <h2 className="card-title text-3xl">Resolved</h2>
